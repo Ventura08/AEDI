@@ -23,7 +23,7 @@ public class C05Ex06 {
         JOptionPane.showConfirmDialog(
                 null,
                 fields,
-                "Valor em celsius",
+                "",
                 JOptionPane.OK_CANCEL_OPTION);
 
         final double distance = kFunctions.kotlinStraight(

@@ -6,7 +6,7 @@ public class C05Ex01 {
     public static void main(String[] args) {
         final int input = Integer.parseInt(JOptionPane.showInputDialog(
                 null,
-                "Digite o valos de X",
+                "Digite o valor de X",
                 "Aula de Java",
                 JOptionPane.INFORMATION_MESSAGE
                 ));

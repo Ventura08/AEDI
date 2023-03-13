@@ -10,7 +10,7 @@ public class C05Ex03 {
                 "Salario: ", salaryField,
                 "Dependentes:", dependentsField
         };
-        JOptionPane.showConfirmDialog(null, fields, "Login", JOptionPane.OK_CANCEL_OPTION);
+        JOptionPane.showConfirmDialog(null, fields, "", JOptionPane.OK_CANCEL_OPTION);
         final double liquidSalary = Integer.parseInt(salaryField.getText()) - (Integer.parseInt(dependentsField.getText()) * 60.0);
         final double impostoDeRenda = liquidSalary * 0.15;
         final String result = "Salario: " + liquidSalary + "\n Dependentes: " + dependentsField.getText() + "\n IR: " + impostoDeRenda;

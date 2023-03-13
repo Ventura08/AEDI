@@ -12,7 +12,7 @@ public class C05Ex05 {
         JOptionPane.showConfirmDialog(
                 null,
                 fields,
-                "Valor em celsius",
+                "",
                 JOptionPane.OK_CANCEL_OPTION);
         final double kelvin = CelsiusToKelvin(myUtilsFunctions.kotlinIntParser(temperature.getText()));
         final double fahrenheit = CelsiusToFahrenheit(myUtilsFunctions.kotlinIntParser(temperature.getText()));
@@ -25,7 +25,7 @@ public class C05Ex05 {
                 JOptionPane.INFORMATION_MESSAGE);
     }
     private static double CelsiusToFahrenheit(int value){
-        return (value * 9/5) + 32;
+        return (value * 9.0/5.0) + 32.0;
     }
     private static double CelsiusToKelvin(int value){
         return (value + 273);

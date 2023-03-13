@@ -14,7 +14,7 @@ public class C05Ex04 {
                 "Y1: ", pointerY1,
                 "Y2:", pointerY2
         };
-        JOptionPane.showConfirmDialog(null, fields, "Login", JOptionPane.OK_CANCEL_OPTION);
+        JOptionPane.showConfirmDialog(null, fields, "", JOptionPane.OK_CANCEL_OPTION);
         double coordinateX = Math.pow((IntConversor(pointerX1.getText()) - IntConversor(pointerX2.getText())), 2.0);
         double coordinateY = Math.pow((IntConversor(pointerY1.getText()) - IntConversor(pointerY2.getText())), 2.0);
         double square = Math.sqrt((coordinateX + coordinateY));
