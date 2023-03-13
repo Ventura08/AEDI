@@ -6,18 +6,37 @@ import javax.swing.*;
 
 public class C05Ex06 {
     public static void main(String[] args) {
-        UtilsFunctions myUtilsFunctions = new UtilsFunctions();
-        JTextField temperature = new JTextField();
+        UtilsFunctions kFunctions = new UtilsFunctions();
+        JTextField a = new JTextField();
+        JTextField b = new JTextField();
+        JTextField c = new JTextField();
+        JTextField x = new JTextField();
+        JTextField y = new JTextField();
         Object[] fields = {
-                "Temperatura em celsiu(Somente numero): ", temperature,
+                "A: ", a,
+                "B: ", b,
+                "C: ", c,
+                "X: ", x,
+                "Y: ", y,
         };
+
         JOptionPane.showConfirmDialog(
                 null,
                 fields,
                 "Valor em celsius",
                 JOptionPane.OK_CANCEL_OPTION);
 
-        final String result = "Kelvin: ";
+        final double distance = kFunctions.kotlinStraight(
+                a.getText(),
+                b.getText(),
+                c.getText(),
+                x.getText(),
+                y.getText()
+                );
+
+
+
+        final String result = "Distância: " + distance;
         JOptionPane.showMessageDialog(
                 null,
                 result,
