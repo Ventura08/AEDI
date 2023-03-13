@@ -15,13 +15,15 @@ public class C05Ex09 {
                 "Nota 2: ", secondNote,
                 "Nota 3: ", thirdNote,
         };
+        final double[] noteWeight = {2.0, 3.0, 5.0};
         JOptionPane.showConfirmDialog(
                 null,
                 fields,
                 "",
                 JOptionPane.OK_CANCEL_OPTION);
-        //final double expression = kFunctions.kotlinCircleRadius(s.getText(), a.getText(), pi);
-        final String result = "Valor da Função: ";
+        final String[] notes = {firstNote.getText(), secondNote.getText(), thirdNote.getText()};
+        final double expression = kFunctions.kotlinWeightedAverage(noteWeight, notes);
+        final String result = "Valor da Media: " + expression;
         JOptionPane.showMessageDialog(
                 null,
                 result,

@@ -13,4 +13,11 @@ class UtilsFunctions {
     fun kotlinCircleRadius(s: String, a: String, pi: Double): Double {
         return sqrt((360.0 * s.toDouble()) / (a.toDouble() * pi) )
     }
+    fun kotlinWeightedAverage(notesWeight: DoubleArray, notes: Array<String>): Double {
+        var total = 0.0
+        for((index, item) in notes.withIndex()){
+            total += item.toDouble() * notesWeight[index]
+        }
+        return (total / notesWeight.sum())
+    }
 }
