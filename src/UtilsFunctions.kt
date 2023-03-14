@@ -20,4 +20,10 @@ class UtilsFunctions {
         }
         return (total / notesWeight.sum())
     }
+    fun kotlinSecondsToMinutesAndHours(valueInSeconds: String): String {
+        val hours = valueInSeconds.toDouble() / 3600.0
+        val minutes = valueInSeconds.toDouble() % 3600.0 / 60.0
+        val seconds = valueInSeconds.toDouble() % 3600 % 60 % 60
+        return "Horas: ${hours.toInt()},\n Minutos: ${minutes.toInt()}, \n Segundos: ${seconds.toInt()}"
+    }
 }
