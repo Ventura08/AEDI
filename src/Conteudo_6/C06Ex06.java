@@ -19,8 +19,8 @@ public class C06Ex06 {
                 fields,
                 "",
                 JOptionPane.OK_CANCEL_OPTION);
-        final double delta = CalculateDelta(toDouble(a.getText()), toDouble(b.getText()), toDouble(c.getText()));
-        final String expression = CalculateBaskara(toDouble(a.getText()), toDouble(b.getText()), delta);
+        final double delta = calculateDelta(toDouble(a.getText()), toDouble(b.getText()), toDouble(c.getText()));
+        final String expression = calculateBhaskara(toDouble(a.getText()), toDouble(b.getText()), delta);
         final String result = "Resultado: \n" + expression;
         JOptionPane.showMessageDialog(
                 null,
