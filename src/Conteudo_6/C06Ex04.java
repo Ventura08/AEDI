@@ -6,7 +6,6 @@ import javax.swing.*;
 
 public class C06Ex04 {
     public static void main(String[] args) {
-        UtilsFunctions kFunctions = new UtilsFunctions();
         JTextField weight = new JTextField();
         JTextField height = new JTextField();
         String expression = "";
