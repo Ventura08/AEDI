@@ -34,7 +34,7 @@ public class C06Ex10 {
     }
 
     private static double redeemedAmount(double investment, double durationInDays, double dailyRate, double adminRate) {
-        final double yield = (investment * dailyRate * durationInDays);
+        final double yield = (investment * (dailyRate / 100) * durationInDays);
         final double ir = 0.15 * yield;
 
         return (investment + yield) - ir - adminRate;
