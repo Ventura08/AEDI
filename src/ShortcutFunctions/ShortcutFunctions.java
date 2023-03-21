@@ -5,7 +5,11 @@ public class ShortcutFunctions {
         return Double.parseDouble(value);
     }
 
-public static double pow(double number, int exponential) {
+    public static Integer toInt(String value) {
+        return Integer.parseInt(value);
+    }
+
+    public static double pow(double number, int exponential) {
         return Math.pow(number, exponential);
     }
 
