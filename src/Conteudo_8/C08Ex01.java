@@ -3,11 +3,11 @@ package Conteudo_8;
 import javax.swing.*;
 import static ShortcutFunctions.ShortcutFunctions.toDouble;
 
-public class C08Ex1 {
+public class C08Ex01 {
     public static void main(String[] args) {
         JTextField radius = new JTextField();
         StringBuilder result = new StringBuilder();
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 10; i++) {
             Object[] fields = {
                     "Informe o raio número " + (i + 1) + ": ", radius,
             };
