@@ -9,7 +9,7 @@ public class C08Ex1 {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < 3; i++) {
             Object[] fields = {
-                    "Informe o raio numero " + (i + 1) + ": ", radius,
+                    "Informe o raio número " + (i + 1) + ": ", radius,
             };
             JOptionPane.showConfirmDialog(
                     null,
