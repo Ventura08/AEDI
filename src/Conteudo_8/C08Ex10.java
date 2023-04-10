@@ -41,7 +41,7 @@ public class C08Ex10 {
                 min = toDouble(price.getText()) * toDouble(quantityConsumed.getText());
                 highestPrice = name.getText();
             }
-            
+
             name.setText("");
             price.setText("");
             quantityConsumed.setText("");
