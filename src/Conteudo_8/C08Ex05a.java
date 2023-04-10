@@ -11,7 +11,7 @@ public class C08Ex05a {
         int ciclanoVotes = 0;
         int beltranoVotes = 0;
         int nullVotes = 0;
-        result.append("O vencedor foi: ").append(makeVotation(fulanoVotes, ciclanoVotes, beltranoVotes, nullVotes, candidate));
+        result.append("Resultado: \n").append(makeVotation(fulanoVotes, ciclanoVotes, beltranoVotes, nullVotes, candidate));
         JOptionPane.showMessageDialog(
                 null,
                 result.toString(),
